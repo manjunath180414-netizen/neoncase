@@ -1,100 +1,145 @@
-<!-- PART 1: TOP ANNOUNCEMENT BAR + NAVIGATION -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<header class="site-header">
+    <title>NeonCase.in</title>
 
-  <!-- Moving Black Announcement Strip -->
-  <div class="announcement-bar">
-    <div class="announcement-track">
-      <div class="announcement-item">
-        <span class="bolt">⚡</span>
-        <strong>FIRST TIME IN KARNATAKA!</strong>
-        <span class="bolt">⚡</span>
-        <span class="announcement-text">
-          The glow-in-the-dark phone case that stands out.
-        </span>
-      </div>
+    <!-- Connect CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
 
-      <div class="announcement-item">
-        <span class="bolt">⚡</span>
-        <strong>FIRST TIME IN KARNATAKA!</strong>
-        <span class="bolt">⚡</span>
-        <span class="announcement-text">
-          The glow-in-the-dark phone case that stands out.
-        </span>
-      </div>
+<body>
 
-      <div class="announcement-item">
-        <span class="bolt">⚡</span>
-        <strong>FIRST TIME IN KARNATAKA!</strong>
-        <span class="bolt">⚡</span>
-        <span class="announcement-text">
-          The glow-in-the-dark phone case that stands out.
-        </span>
-      </div>
-    </div>
-  </div>
+    <!-- =====================================================
+         PART 1 — TOP ANNOUNCEMENT BAR + NAVIGATION
+    ====================================================== -->
 
+    <!-- TOP BLACK MOVING ANNOUNCEMENT BAR -->
+    <div class="announcement-bar">
+        <div class="announcement-track">
 
-  <!-- Main Navigation -->
-  <nav class="main-navbar">
+            <div class="announcement-content">
+                <span class="bolt">⚡</span>
+                <strong>FIRST TIME IN KARNATAKA!</strong>
+                <span class="bolt">⚡</span>
+                <span class="announcement-divider"></span>
+                <span>The glow-in-the-dark phone case that stands out.</span>
+            </div>
 
-    <!-- Logo -->
-    <a href="#" class="brand-logo">
-      <span class="logo-main">neoncase</span><span class="logo-dot">.in</span>
-    </a>
+            <!-- Duplicate for continuous movement -->
+            <div class="announcement-content">
+                <span class="bolt">⚡</span>
+                <strong>FIRST TIME IN KARNATAKA!</strong>
+                <span class="bolt">⚡</span>
+                <span class="announcement-divider"></span>
+                <span>The glow-in-the-dark phone case that stands out.</span>
+            </div>
 
+            <div class="announcement-content">
+                <span class="bolt">⚡</span>
+                <strong>FIRST TIME IN KARNATAKA!</strong>
+                <span class="bolt">⚡</span>
+                <span class="announcement-divider"></span>
+                <span>The glow-in-the-dark phone case that stands out.</span>
+            </div>
 
-    <!-- Navigation Links -->
-    <div class="nav-links">
-      <a href="#">Shop</a>
-      <a href="#">Collections</a>
-      <a href="#">How It Works</a>
-      <a href="#">Reviews</a>
-      <a href="#">Contact</a>
+        </div>
     </div>
 
 
-    <!-- Right Side Icons -->
-    <div class="nav-actions">
+    <!-- MAIN NAVIGATION -->
+    <header class="navbar">
 
-      <!-- Search -->
-      <button class="nav-icon" aria-label="Search">
-        <svg viewBox="0 0 24 24">
-          <circle cx="11" cy="11" r="6.5"></circle>
-          <line x1="16" y1="16" x2="21" y2="21"></line>
-        </svg>
-      </button>
+        <div class="nav-container">
 
-      <!-- Account -->
-      <button class="nav-icon" aria-label="Account">
-        <svg viewBox="0 0 24 24">
-          <circle cx="12" cy="8" r="3.5"></circle>
-          <path d="M5.5 20c.8-3.5 3-5.3 6.5-5.3s5.7 1.8 6.5 5.3"></path>
-        </svg>
-      </button>
+            <!-- LOGO -->
+            <a href="index.html" class="logo">
+                neoncase<span>.in</span>
+            </a>
 
-      <!-- Wishlist -->
-      <button class="nav-icon" aria-label="Wishlist">
-        <svg viewBox="0 0 24 24">
-          <path d="M20.8 8.7c0 5.4-8.8 10.2-8.8 10.2S3.2 14.1 3.2 8.7
-                   C3.2 5.5 7 3.7 9.6 6.1L12 8.4l2.4-2.3
-                   C17 3.7 20.8 5.5 20.8 8.7Z"></path>
-        </svg>
-      </button>
 
-      <!-- Cart -->
-      <button class="nav-icon cart-icon" aria-label="Shopping Cart">
-        <svg viewBox="0 0 24 24">
-          <path d="M4 5h2l1.5 10h10L20 8H7"></path>
-          <circle cx="9" cy="19" r="1.2"></circle>
-          <circle cx="17" cy="19" r="1.2"></circle>
-        </svg>
+            <!-- DESKTOP MENU -->
+            <nav class="nav-menu">
 
-        <span class="cart-count">0</span>
-      </button>
+                <a href="#shop">Shop</a>
+                <a href="#collections">Collections</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#reviews">Reviews</a>
+                <a href="#contact">Contact</a>
 
-    </div>
+            </nav>
 
-  </nav>
 
-</header>
+            <!-- RIGHT SIDE ICONS -->
+            <div class="nav-actions">
+
+                <!-- SEARCH -->
+                <button class="nav-icon" aria-label="Search">
+                    <svg viewBox="0 0 24 24">
+                        <circle cx="11" cy="11" r="6.5"></circle>
+                        <line x1="16" y1="16" x2="21" y2="21"></line>
+                    </svg>
+                </button>
+
+
+                <!-- ACCOUNT -->
+                <button class="nav-icon" aria-label="Account">
+                    <svg viewBox="0 0 24 24">
+                        <circle cx="12" cy="8" r="3.5"></circle>
+                        <path d="M5 20c.8-3.3 3.2-5 7-5s6.2 1.7 7 5"></path>
+                    </svg>
+                </button>
+
+
+                <!-- WISHLIST -->
+                <button class="nav-icon" aria-label="Wishlist">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M20.8 8.8c0 5.5-8.8 10.3-8.8 10.3S3.2 14.3 3.2 8.8C3.2 6 5.1 4 7.7 4c1.7 0 3.3.9 4.3 2.3C13 4.9 14.6 4 16.3 4c2.6 0 4.5 2 4.5 4.8z"></path>
+                    </svg>
+                </button>
+
+
+                <!-- CART -->
+                <button class="nav-icon cart-icon" aria-label="Shopping Cart">
+
+                    <svg viewBox="0 0 24 24">
+                        <path d="M3 4h2l2.1 11.2a2 2 0 0 0 2 1.6h7.8a2 2 0 0 0 1.9-1.4L21 8H6"></path>
+                        <circle cx="10" cy="20" r="1"></circle>
+                        <circle cx="18" cy="20" r="1"></circle>
+                    </svg>
+
+                    <!-- CART COUNT -->
+                    <span class="cart-count">0</span>
+
+                </button>
+
+            </div>
+
+
+            <!-- MOBILE MENU BUTTON -->
+            <button class="mobile-menu-button" aria-label="Open Menu">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- =====================================================
+         FUTURE SECTIONS WILL COME BELOW THIS
+         
+         PART 2 — HERO
+         PART 3 — SHOP BY DEVICE + BEST SELLERS
+         PART 4 — HOW IT WORKS + REVIEWS + FOOTER
+    ====================================================== -->
+
+
+</body>
+</html>
